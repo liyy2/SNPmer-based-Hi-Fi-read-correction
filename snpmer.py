@@ -9,7 +9,11 @@ class SnpmerParser:
             ret[1] = ret[1:]
         else:
             self.directionality = '+'
-        self.position_in_read = ret[1]
+        self.position_in_read = int(ret[1])
     
     def generate_identifier(self):
         return self.snpmer_id + self.reference
+
+
+
+        
